@@ -1,0 +1,19 @@
+{
+  "name": "@uside/cryptocoins-explorers",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/uSide/cryptocoins-explorers.git"
+  },
+  "author": "Vladimir <uSide> Kleshko",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/uSide/cryptocoins-explorers/issues"
+  },
+  "homepage": "https://github.com/uSide/cryptocoins-explorers#readme"
+}
