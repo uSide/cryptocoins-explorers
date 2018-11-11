@@ -5,7 +5,8 @@ let explorers = {
     bch: 'https://explorer.bitcoin.com/bch/tx/{{hash}}',
     xmr: 'http://moneroblocks.info/tx/{{hash}}',
     dash: 'https://chainz.cryptoid.info/dash/tx.dws?{{hash}}.htm',
-    eth: 'https://etherscan.io/tx/{{hash}}'
+    eth: 'https://etherscan.io/tx/{{hash}}',
+    xrp: 'https://xrpcharts.ripple.com/#/transactions/{{hash}}'
   },
   testnet: {
     btc: 'https://live.blockcypher.com/btc-testnet/tx/{{hash}}/',
@@ -13,7 +14,8 @@ let explorers = {
     bch: 'https://www.blocktrail.com/tBCC/tx/{{hash}}',
     xmr: 'https://testnet.xmrchain.net/tx/{{hash}}',
     dash: 'https://chain.so/tx/DASHTEST/{{hash}}',
-    eth: 'https://kovan.etherscan.io/tx/{{hash}}'
+    eth: 'https://kovan.etherscan.io/tx/{{hash}}',
+    xrp: 'https://ripplerm.github.io/ripple-wallet/'
   }
 }
 
