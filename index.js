@@ -7,7 +7,9 @@ let explorers = {
     dash: 'https://chainz.cryptoid.info/dash/tx.dws?{{hash}}.htm',
     eth: 'https://etherscan.io/tx/{{hash}}',
     xrp: 'https://xrpcharts.ripple.com/#/transactions/{{hash}}',
-    xlm: 'https://stellarchain.io/tx/{{hash}}'
+    xlm: 'https://stellarchain.io/tx/{{hash}}',
+    ada: 'https://cardanoexplorer.com/tx/{{hash}}',
+    trx: 'https://tronscan.org/#/transaction/{{hash}}'
   },
   testnet: {
     btc: 'https://live.blockcypher.com/btc-testnet/tx/{{hash}}/',
@@ -17,7 +19,9 @@ let explorers = {
     dash: 'https://chain.so/tx/DASHTEST/{{hash}}',
     eth: 'https://kovan.etherscan.io/tx/{{hash}}',
     xrp: 'https://ripplerm.github.io/ripple-wallet/',
-    xlm: 'https://testnet.steexp.com/tx/{{hash}}'
+    xlm: 'https://testnet.steexp.com/tx/{{hash}}',
+    ada: 'http://cardano-explorer.cardano-testnet.iohkdev.io/tx/{{hash}}',
+    trx: 'https://shasta.tronscan.org/#/transaction/{{hash}}'
   }
 }
 
