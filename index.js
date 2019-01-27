@@ -9,7 +9,8 @@ let explorers = {
     xrp: 'https://xrpcharts.ripple.com/#/transactions/{{hash}}',
     xlm: 'https://stellarchain.io/tx/{{hash}}',
     ada: 'https://cardanoexplorer.com/tx/{{hash}}',
-    trx: 'https://tronscan.org/#/transaction/{{hash}}'
+    trx: 'https://tronscan.org/#/transaction/{{hash}}',
+    iota: 'https://thetangle.org/transaction/{{hash}}'
   },
   testnet: {
     btc: 'https://live.blockcypher.com/btc-testnet/tx/{{hash}}/',
@@ -21,7 +22,8 @@ let explorers = {
     xrp: 'https://ripplerm.github.io/ripple-wallet/',
     xlm: 'https://testnet.steexp.com/tx/{{hash}}',
     ada: 'http://cardano-explorer.cardano-testnet.iohkdev.io/tx/{{hash}}',
-    trx: 'https://shasta.tronscan.org/#/transaction/{{hash}}'
+    trx: 'https://shasta.tronscan.org/#/transaction/{{hash}}',
+    iota: 'https://devnet.thetangle.org/transaction/{{hash}}'
   }
 }
 
