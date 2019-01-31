@@ -10,7 +10,8 @@ let explorers = {
     xlm: 'https://stellarchain.io/tx/{{hash}}',
     ada: 'https://cardanoexplorer.com/tx/{{hash}}',
     trx: 'https://tronscan.org/#/transaction/{{hash}}',
-    miota: 'https://thetangle.org/transaction/{{hash}}'
+    miota: 'https://thetangle.org/transaction/{{hash}}',
+    zec: 'https://chain.so/tx/ZEC/{{hash}}'
   },
   testnet: {
     btc: 'https://live.blockcypher.com/btc-testnet/tx/{{hash}}/',
@@ -23,7 +24,8 @@ let explorers = {
     xlm: 'https://testnet.steexp.com/tx/{{hash}}',
     ada: 'http://cardano-explorer.cardano-testnet.iohkdev.io/tx/{{hash}}',
     trx: 'https://shasta.tronscan.org/#/transaction/{{hash}}',
-    miota: 'https://devnet.thetangle.org/transaction/{{hash}}'
+    miota: 'https://devnet.thetangle.org/transaction/{{hash}}',
+    zec: 'https://explorer.testnet.z.cash/tx/{{hash}}'
   }
 }
 
