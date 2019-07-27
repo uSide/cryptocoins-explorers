@@ -1,40 +1,38 @@
 let explorers = {
-  mainnet: {
-    btc: 'https://blockchain.info/tx/{{hash}}',
-    ltc: 'http://explorer.litecoin.net/tx/{{hash}}',
-    bch: 'https://explorer.bitcoin.com/bch/tx/{{hash}}',
-    xmr: 'http://moneroblocks.info/tx/{{hash}}',
-    dash: 'https://chainz.cryptoid.info/dash/tx.dws?{{hash}}.htm',
-    xrp: 'https://xrpcharts.ripple.com/#/transactions/{{hash}}',
-    xlm: 'https://stellarchain.io/tx/{{hash}}',
-    ada: 'https://cardanoexplorer.com/tx/{{hash}}',
-    trx: 'https://tronscan.org/#/transaction/{{hash}}',
-    miota: 'https://thetangle.org/transaction/{{hash}}',
-    zec: 'https://chain.so/tx/ZEC/{{hash}}',
-    usdt: 'https://omniexplorer.info/tx/{{hash}}',
-    eth: 'https://etherscan.io/tx/{{hash}}',
-    zrx: 'https://etherscan.io/tx/{{hash}}',
-    tusd: 'https://etherscan.io/tx/{{hash}}',
-    usdc: 'https://etherscan.io/tx/{{hash}}',
-  },
-  testnet: {
-    btc: 'https://live.blockcypher.com/btc-testnet/tx/{{hash}}/',
-    ltc: 'https://chain.so/tx/LTCTEST/{{hash}}',
-    bch: 'https://www.blocktrail.com/tBCC/tx/{{hash}}',
-    xmr: 'https://testnet.xmrchain.net/tx/{{hash}}',
-    dash: 'https://chain.so/tx/DASHTEST/{{hash}}',
-    xrp: 'https://ripplerm.github.io/ripple-wallet/',
-    xlm: 'https://testnet.steexp.com/tx/{{hash}}',
-    ada: 'http://cardano-explorer.cardano-testnet.iohkdev.io/tx/{{hash}}',
-    trx: 'https://shasta.tronscan.org/#/transaction/{{hash}}',
-    miota: 'https://devnet.thetangle.org/transaction/{{hash}}',
-    zec: 'https://explorer.testnet.z.cash/tx/{{hash}}',
-    eth: 'https://ropsten.etherscan.io/tx/{{hash}}',
-    tst: 'https://etherscan.io/tx/{{hash}}',
-  }
+  btc: 'https://blockchair.com/bitcoin/transaction/{{hash}}',
+  ltc: 'https://blockchair.com/litecoin/transaction/{{hash}}',
+  dash: 'https://blockchair.com/dash/transaction/{{hash}}',
+  bch: 'https://blockchair.com/bitcoin-cash/transaction/{{hash}}',
+  doge: 'https://blockchair.com/dogecoin/transaction/{{hash}}',
+  bsv: 'https://blockchair.com/bitcoin-sv/transaction/{{hash}}',
+  usdt: 'https://omniexplorer.info/tx/{{hash}}',
+  zec: 'https://explorer.zcha.in/transactions/{{hash}}',
+
+  eth: 'https://etherscan.io/tx/{{hash}}',
+  trx: 'https://tronscan.org/#/transaction/{{hash}}',
+  xrp: 'https://xrpscan.com/tx/{{hash}}',
+  xlm: 'https://stellarchain.io/tx/{{hash}}',
+  iota: 'https://thetangle.org/transaction/{{hash}}',
+  xtz: 'https://tzscan.io/{{hash}}',
+  neo: 'https://neoscan.io/transaction/{{hash}}',
+  bnb: 'https://explorer.binance.org/tx/{{hash}}',
+  atom: 'https://www.mintscan.io/txs/{{hash}}',
+  eos: 'https://eosflare.io/tx/{{hash}}',
+
+  ada: 'https://cardanoexplorer.com/tx/{{hash}}',
+  xmr: 'http://moneroblocks.info/tx/{{hash}}'
 }
 
-module.exports = (net, coin, hash) => {
-  let template = explorers[net][coin.toLowerCase()]
+let ERC20 = [
+  'ZRX', 'TUSD', 'USDC', 'HOT', 'OMG', 'ZIL', 'LINK', 'PAX', 'REP', 'BAT',
+  'ENJ', 'AE', 'MKR'
+]
+
+ERC20.forEach(coin => {
+  explorers[coin.toLowerCase()] = 'https://etherscan.io/tx/{{hash}}'
+});
+
+module.exports = (coin, hash) => {
+  let template = explorers[coin.toLowerCase()]
   return (template || '{{hash}}').replace('{{hash}}', hash)
 }
