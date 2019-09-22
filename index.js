@@ -18,9 +18,11 @@ let explorers = {
   bnb: 'https://explorer.binance.org/tx/{{hash}}',
   atom: 'https://www.mintscan.io/txs/{{hash}}',
   eos: 'https://eosflare.io/tx/{{hash}}',
+  etc: 'https://gastracker.io/tx/{{hash}}',
 
   ada: 'https://cardanoexplorer.com/tx/{{hash}}',
-  xmr: 'http://moneroblocks.info/tx/{{hash}}'
+  xmr: 'http://moneroblocks.info/tx/{{hash}}',
+  algo: 'https://algoexplorer.io/tx/{{hash}}'
 }
 
 let ERC20 = [
