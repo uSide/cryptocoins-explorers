@@ -22,12 +22,13 @@ let explorers = {
 
   ada: 'https://cardanoexplorer.com/tx/{{hash}}',
   xmr: 'http://moneroblocks.info/tx/{{hash}}',
-  algo: 'https://algoexplorer.io/tx/{{hash}}'
+  algo: 'https://algoexplorer.io/tx/{{hash}}',
+  ae: 'https://explorer.aepps.com/#/tx/{{hash}}',
+  zil: 'https://viewblock.io/zilliqa/tx/{{hash}}'
 }
 
 let ERC20 = [
-  'ZRX', 'TUSD', 'USDC', 'HOT', 'OMG', 'ZIL', 'LINK', 'PAX', 'REP', 'BAT',
-  'ENJ', 'AE', 'MKR'
+  'ZRX', 'TUSD', 'USDC', 'HOT', 'OMG', 'LINK', 'PAX', 'REP', 'BAT', 'ENJ', 'MKR'
 ]
 
 ERC20.forEach(coin => {
