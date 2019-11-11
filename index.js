@@ -7,6 +7,7 @@ let explorers = {
   bsv: 'https://blockchair.com/bitcoin-sv/transaction/{{hash}}',
   usdt: 'https://omniexplorer.info/tx/{{hash}}',
   zec: 'https://explorer.zcha.in/transactions/{{hash}}',
+  qtum: 'https://explorer.qtum.org/tx/{{hash}}',
 
   eth: 'https://etherscan.io/tx/{{hash}}',
   trx: 'https://tronscan.org/#/transaction/{{hash}}',
