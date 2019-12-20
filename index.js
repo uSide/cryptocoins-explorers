@@ -25,7 +25,8 @@ let explorers = {
   xmr: 'http://moneroblocks.info/tx/{{hash}}',
   algo: 'https://algoexplorer.io/tx/{{hash}}',
   ae: 'https://explorer.aepps.com/#/tx/{{hash}}',
-  zil: 'https://viewblock.io/zilliqa/tx/{{hash}}'
+  zil: 'https://viewblock.io/zilliqa/tx/{{hash}}',
+  ont: 'https://explorer.ont.io/transaction/{{hash}}'
 }
 
 let ERC20 = [
