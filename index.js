@@ -14,19 +14,21 @@ let explorers = {
   xrp: 'https://xrpscan.com/tx/{{hash}}',
   xlm: 'https://stellarchain.io/tx/{{hash}}',
   iota: 'https://thetangle.org/transaction/{{hash}}',
-  xtz: 'https://tzscan.io/{{hash}}',
-  neo: 'https://neoscan.io/transaction/{{hash}}',
+  xtz: 'https://dunscan.io/{{hash}}',
+  neo: 'https://neotracker.io/tx/{{hash}}',
   bnb: 'https://explorer.binance.org/tx/{{hash}}',
   atom: 'https://www.mintscan.io/txs/{{hash}}',
-  eos: 'https://eosflare.io/tx/{{hash}}',
-  etc: 'https://gastracker.io/tx/{{hash}}',
+  eos: 'https://bloks.io/transaction/{{hash}}',
+  etc: 'https://blockscout.com/etc/mainnet/tx/{{hash}}',
 
   ada: 'https://cardanoexplorer.com/tx/{{hash}}',
   xmr: 'http://moneroblocks.info/tx/{{hash}}',
   algo: 'https://algoexplorer.io/tx/{{hash}}',
-  ae: 'https://explorer.aepps.com/#/tx/{{hash}}',
+  ae: 'https://explorer.aepps.com/transactions/{{hash}}',
   zil: 'https://viewblock.io/zilliqa/tx/{{hash}}',
-  ont: 'https://explorer.ont.io/transaction/{{hash}}'
+  ont: 'https://explorer.ont.io/transaction/{{hash}}',
+  waves: 'https://wavesexplorer.com/tx/{{hash}}',
+  rvn: 'https://ravencoin.network/tx/{{hash}}'
 }
 
 let ERC20 = [
