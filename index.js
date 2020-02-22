@@ -28,7 +28,9 @@ let explorers = {
   zil: 'https://viewblock.io/zilliqa/tx/{{hash}}',
   ont: 'https://explorer.ont.io/transaction/{{hash}}',
   waves: 'https://wavesexplorer.com/tx/{{hash}}',
-  rvn: 'https://ravencoin.network/tx/{{hash}}'
+  rvn: 'https://ravencoin.network/tx/{{hash}}',
+  zen: 'https://explorer.zen-solutions.io/tx/{{hash}}',
+  xem: 'https://explorer.nemtool.com/#/s_tx?hash={{hash}}'
 }
 
 let ERC20 = [
