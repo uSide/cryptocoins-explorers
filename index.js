@@ -13,7 +13,7 @@ let explorers = {
   trx: 'https://tronscan.org/#/transaction/{{hash}}',
   xrp: 'https://xrpscan.com/tx/{{hash}}',
   xlm: 'https://stellarchain.io/tx/{{hash}}',
-  iota: 'https://thetangle.org/transaction/{{hash}}',
+  miota: 'https://thetangle.org/transaction/{{hash}}',
   xtz: 'https://dunscan.io/{{hash}}',
   neo: 'https://neotracker.io/tx/{{hash}}',
   bnb: 'https://explorer.binance.org/tx/{{hash}}',
