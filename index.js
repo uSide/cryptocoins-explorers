@@ -34,8 +34,8 @@ let explorers = {
 }
 
 let ERC20 = [
-  'ZRX', 'TUSD', 'USDC', 'HOT', 'OMG', 'LINK', 'PAX', 'REP', 'BAT', 'ENJ',
-  'MKR', 'USDS', 'BUSD', 'GUSD', 'EURS', 'HUSD', 'USDT20'
+  'ZRX', 'TUSD', 'USDC', 'HOT', 'OMG', 'LINK', 'PAX', 'REP', 'DAI', 'BAT',
+  'ENJ', 'MKR', 'USDS', 'BUSD', 'GUSD', 'EURS', 'HUSD', 'USDT20'
 ]
 
 ERC20.forEach(coin => {
